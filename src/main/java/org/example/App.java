@@ -11,6 +11,15 @@ public class App {
         Student student = (Student) context.getBean(Student.class);
         student.show();
 
+//        Writer write = context.getBean(Pencil.class);
+//        write.write();
+//
+//        Writer write1 = context.getBean(Pen.class);
+//        write1.write();
+
+        Pencil pencil = context.getBean(Pencil.class);
+        pencil.write();
+
 
 
     }
