@@ -13,8 +13,8 @@ import org.springframework.context.annotation.Primary;
 public class myConfig {
 
     @Bean
-    @Qualifier("Pencil")
-    public Student student(Writer writer) {
+
+    public Student student(@Qualifier("pen") Writer writer) {
         Student st = new Student();
         st.setRno(228);
         st.setWrite(writer);
@@ -25,14 +25,14 @@ public class myConfig {
 
     @Bean
     @Primary
-
+    @Qualifier("pencil")
     public Pencil pencil() {
         return new Pencil();
     }
 
 
     @Bean
-    @Qualifier() //higher priority than primary
+     //higher priority than primary
     public Pen pen() {
         return new Pen();
     }

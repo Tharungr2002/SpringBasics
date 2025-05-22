@@ -10,6 +10,7 @@ public class App {
 
         Student student = (Student) context.getBean(Student.class);
         student.show();
+        student.WriterName();
 
 //        Writer write = context.getBean(Pencil.class);
 //        write.write();
@@ -17,8 +18,8 @@ public class App {
 //        Writer write1 = context.getBean(Pen.class);
 //        write1.write();
 
-        Pencil pencil = context.getBean(Pencil.class);
-        pencil.write();
+//        Pencil pencil = context.getBean(Pencil.class);
+//        pencil.write();
 
 
 
