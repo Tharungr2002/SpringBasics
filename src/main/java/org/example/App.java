@@ -10,7 +10,10 @@ public class App {
 
         Student student = (Student) context.getBean(Student.class);
         student.show();
-        student.WriterName();
+        student.WriterName();        //Final code....Same for springboot....
+                                     // The difference is..there will be no config file
+                                     // for springboot..only specify component,primary,
+                                     // Qualifiers, scope.
 
 
 
