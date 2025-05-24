@@ -12,15 +12,6 @@ public class App {
         student.show();
         student.WriterName();
 
-//        Writer write = context.getBean(Pencil.class);
-//        write.write();
-//
-//        Writer write1 = context.getBean(Pen.class);
-//        write1.write();
-
-//        Pencil pencil = context.getBean(Pencil.class);
-//        pencil.write();
-
 
 
     }
